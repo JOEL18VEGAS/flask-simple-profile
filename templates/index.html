@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joel Vegas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        html {
+        
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.t7WJ6_2s-8f6BHwoMm6DXwHaEo%26pid%3DApi&f=1&ipt=8c280369fe8ea92a81094adcf93f6ccdcbea95373303e49bf518f10f32ab01a2&ipo=images');
+            /* background-repeat: no-repeat; */
+            /* background-size: cover; */
+        }
+    </style>
+  </head>
+  <body>
+  <section class="section has-text-centered">
+    <figure class="image container is-128x128">
+      <img class="is-rounded" src="https://lh3.googleusercontent.com/a/AEdFTp7Mc55VgSTewSMVpYLbEy_TwWvDGR_OFETs646MwQ=s288-p-rw-no">
+    </figure>
+    <p class="title" style="color: white;">Joel Jesus Vegas Gonzalez</p>
+    <p class="subtitle" style="color: white;">| Full-Stack | Backend | Frontend | Web | Flutter |</p>
+    <p class="subtitle" style="color: white;">JoelVegas2023@gmail.com</p>
+    <a class="button is-info is-outline is-rounded" href="https://www.linkedin.com/in/joel19vegas/" target="_blank">Linkedin</a>
+    <a class="button is-success is-outline is-rounded" href="https://api.whatsapp.com/send?phone=573017218540" target="_blank">Whatsapp</a>
+    <a class="button is-dark is-outline is-rounded" href="https://github.com/JOEL18VEGAS" target="_blank">Github</a>
+    <a class="button is-info is-outline is-rounded" href="https://xn--r1a.click/JOEL18VEGAS" target="_blank">Telegram</a>
+    <div>
+        <a class="button is-danger mt-3 " href=
+        {{ url_for('contact')}}>Send me Email</a>
+    </div>
+    </div>
+  </section>
+  <section class="columns">
+    <div class="column is-three-fifths is-offset-one-fifth has-background-dark">
+        <div class="columns is-gapless">
+            <div class="column is-half">
+                <div class="card m-3 has-background-success-dark" >
+                    <div class="card-content" style="color: white;">
+                        <h1 class="title" style="color: white;">About me</h1>
+                        {{ profile.about |safe}}
+                    </div>
+                </div>
+                <div class="card m-3 has-background-success-dark">
+                    <div class="card-content" style="color: white;">
+                        <h1 class="title" style="color: white;">Education</h1>
+                        {{ profile.education |safe}}
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half">
+                <div class="card m-3 has-background-success-dark">
+                    <div class="card-content" style="color: white;">
+                        <h1 class="title" style="color: white;">Relevant Skills</h1>
+                        {{ profile.experience |safe}}
+                    </div>
+                </div>
+                <div class="card m-3 has-background-success-dark">
+                    <div class="card-content" style="color: white;">
+                        <h1 class="title" style="color: white;">Interests</h1>
+                        {{ profile.interests |safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+  </body>
+</html>
+
+
